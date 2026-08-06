@@ -264,3 +264,40 @@ body, .sidebar, .project-card, .pill-nav, #chat-window, .skill, .inline-chip, .f
 .btn-primary, .hero-btn-primary, #chat-header, #chat-form button, .nav-link.active{ color: var(--bg); }
 #theme-toggle{ border: none; background: transparent; cursor: pointer; font-size: 1rem; padding: 8px 12px; border-radius: 999px; }
 #theme-toggle:hover{ background: var(--accent-soft); }
+
+/* ===== Publications ===== */
+.pub-journal{
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 6px;
+}
+
+.pub-meta{
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.pub-authors{
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.pub-doi{
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.pub-doi:hover{
+  color: var(--ink);
+}

@@ -19,7 +19,7 @@ if (prefersReducedMotion || !('IntersectionObserver' in window)) {
 
 // ===== Pill nav =====
 const navLinks = document.querySelectorAll('.nav-link');
-const navSections = ['home', 'work', 'experience', 'contact']
+const navSections = ['home', 'work', 'experience', 'publications', 'contact']
   .map(id => document.getElementById(id))
   .filter(Boolean);
 
