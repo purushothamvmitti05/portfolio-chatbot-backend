@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purushotham V Mitti — Full-Stack Developer</title>
+<meta name="description" content="Purushotham V Mitti — Full-Stack Developer & Automation Engineer based in Bengaluru, India.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+<!-- OG tags: makes WhatsApp/LinkedIn show a rich preview card -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Purushotham V Mitti — Full-Stack Developer">
+<meta property="og:description" content="AI-powered apps, FastAPI backends & automation tools. Bengaluru, India.">
+<meta property="og:image" content="https://YOUR-LIVE-SITE/preview.png">
+<meta property="og:url" content="https://YOUR-LIVE-SITE/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+
+<script>
+  (function(){
+    var t = localStorage.getItem('theme');
+    if(!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+</head>
+<body>
+
+<div class="layout">
+
+<!-- CHATBOT -->
+<div id="chat-widget">
+  <button id="chat-toggle" aria-label="Open chat">💬</button>
+  <span id="chat-badge" class="chat-badge" hidden>1</span>
+  <span id="chat-teaser">Ask me about Purushotham 👋</span>
+  <div id="chat-window" class="hidden">
+    <div id="chat-header">Ask me anything</div>
+    <div id="chat-messages"></div>
+    <form id="chat-form">
+      <input id="chat-input" type="text" placeholder="Type a question..." autocomplete="off">
+      <button type="submit">➤</button>
+    </form>
+  </div>
+</div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <img class="avatar" src="/static/PHOTO.jpg" alt="Purushotham V Mitti">
+      <h1 class="name">Purushotham V Mitti</h1>
+      <p class="handle">@purushothamvmitti05</p>
+      <p class="location">📍 Bengaluru, India</p>
+      <p class="role-line">Software Engineer · AI Developer</p>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        <span class="status-text">open to opportunities</span>
+      </div>
+      
+      <p class="xp-line">5 internships · ex‑Utthunga · Rooman · Varcons</p>
+
+      <div class="skills">
+        <span class="skill">--python</span>
+        <span class="skill">--fastapi</span>
+        <span class="skill">--linux</span>
+        <span class="skill">--git/github</span>
+        <span class="skill">--shell-scripting</span>
+        <span class="skill">--langchain</span>
+        <span class="skill">--nlp</span>
+        <span class="skill">--js</span>
+        <span class="skill">--sql</span>
+        <span class="skill">--docker</span>
+        <span class="skill">--iot</span>
+      </div>
+
+      <div class="sidebar-actions">
+        <a class="btn-primary" href="#contact">✉ Message</a>
+        <a class="btn-icon" href="/static/Purushotham_Mitti__Resume.pdf" download aria-label="Download résumé">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+
+      <nav class="social-links">
+        <a href="https://github.com/purushothamvmitti05" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/purushotham-v-mitti" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:purushothamvmitti05@gmail.com">Email</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <!-- NAV -->
+    <nav class="pill-nav" id="pillNav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark / light mode">🌙</button>
+    </nav>
+
+    <!-- INTRO / HERO -->
+    <section class="intro" id="home">
+      <svg class="doodle" viewBox="0 0 72 40" aria-hidden="true">
+        <circle cx="26" cy="10" r="3.5" fill="currentColor"/>
+        <circle cx="44" cy="7" r="3.5" fill="currentColor"/>
+        <path d="M12 20 Q 34 40 58 16" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+      </svg>
+
+      <h1 class="hero-title">Hi! I'm Purushotham <span class="wave">👋</span></h1>
+      <h2 class="hero-role"><span id="typed-role">Software Engineer</span><span class="caret">|</span></h2>
+
+      <p class="hero-description">
+        Software engineer 💻 with <strong>5 Internships</strong>, currently building
+        AI-powered applications <span class="inline-chip">🤖 Langchain</span> and
+        scalable backends <span class="inline-chip">⚡ FastAPI</span>.
+      </p>
+
+      <p class="hero-description">
+        Previously automated DB reporting at <span class="inline-chip">Utthunga</span>
+        and shipped CI/CD pipelines on AWS at <span class="inline-chip">Rooman</span>.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="Purushotham_Mitti__Resume.pdf" class="hero-btn-primary" download>Download Resume</a>
+        <a href="https://github.com/purushothamvmitti05" target="_blank" rel="noopener" class="hero-btn-secondary">GitHub</a>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="section-head">
+        <h3>Work</h3>
+        <span class="section-count" id="workCount">08</span>
+      </div>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-chip active" data-filter="all">All <span>08</span></button>
+        <button class="filter-chip" data-filter="ai">AI / ML <span>02</span></button>
+        <button class="filter-chip" data-filter="backend">Backend / FastAPI <span>02</span></button>
+        <button class="filter-chip" data-filter="web">Web <span>03</span></button>
+        <button class="filter-chip" data-filter="design">Design <span>01</span></button>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- 1 · FastAPI URL Shortener -->
+        <article class="project-card" data-category="backend">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=450&fit=crop" alt="FastAPI URL Shortener" loading="lazy">
+            <div class="project-actions">
+              <a href="https://github.com/purushothamvmitti05" target="_blank" rel="noopener" aria-label="View URL Shortener code on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View URL Shortener live demo"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>FastAPI URL Shortener</h4>
+            <p>Production-grade REST API with rate limiting, click analytics and Dockerized PostgreSQL, shipped with a GitHub Actions CI/CD pipeline.</p>
+            <div class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>CI/CD</span></div>
+          </div>
+        </article>
+
+        <!-- 2 · AI Training Platform -->
+        <article class="project-card" data-category="ai">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=450&fit=crop" alt="AI Training Platform" loading="lazy">
+            <div class="project-actions">
+              <a href="https://github.com/purushothamvmitti05" target="_blank" rel="noopener" aria-label="View AI Training Platform code on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View AI Training Platform live demo"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>AI Training Platform</h4>
+            <p>Full-stack platform with user authentication, a 5-module course structure and automated assessments powered by RESTful APIs.</p>
+            <div class="tags"><span>Python</span><span>Flask</span><span>SQLite</span><span>REST API</span></div>
+          </div>
+        </article>
+
+        <!-- 3 · Professional Portfolio -->
+        <article class="project-card" data-category="web">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=450&fit=crop" alt="Professional Portfolio" loading="lazy">
+            <div class="project-actions">
+              <a href="https://github.com/purushothamvmitti05" target="_blank" rel="noopener" aria-label="View Portfolio code on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+              <a href="https://purushothamvmitti05.github.io/" target="_blank" rel="noopener" aria-label="View Portfolio live"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>Professional Portfolio</h4>
+            <p>Interactive portfolio showcasing technical skills, projects and achievements with a fully responsive design.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+
+        <!-- 4 · Medico -->
+        <article class="project-card" data-category="ai">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=450&fit=crop" alt="Medico healthcare system" loading="lazy">
+            <div class="project-actions">
+              <a href="https://github.com/purushothamvmitti05/medico-main/tree/main/medico-main" target="_blank" rel="noopener" aria-label="View Medico on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>Medico — Medical Guidance System</h4>
+            <p>ML-powered healthcare platform with disease prediction and blood bank assistance, built on a Random Forest model.</p>
+            <div class="tags"><span>Python</span><span>Flask</span><span>ML</span></div>
+          </div>
+        </article>
+
+        <!-- 5 · Animal Rescue -->
+        <article class="project-card" data-category="web">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=450&fit=crop" alt="Animal Rescue web app" loading="lazy">
+            <div class="project-actions">
+              <a href="https://github.com/purushothamvmitti05" target="_blank" rel="noopener" aria-label="View Animal Rescue on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>Animal Rescue Web App</h4>
+            <p>Upload an injured animal's photo, and the nearest vet hospitals get notified. QR-based donations built in.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          </div>
+        </article>
+
+        <!-- 6 · Orizon -->
+        <article class="project-card" data-category="web">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=450&fit=crop" alt="Orizon food delivery" loading="lazy">
+            <div class="project-actions">
+              <a href="https://github.com/purushothamvmitti05" target="_blank" rel="noopener" aria-label="View Orizon on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>Orizon — Food Delivery</h4>
+            <p>Ordering platform with menu browsing, cart, and order management on an MSSQL backend.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>MSSQL</span></div>
+          </div>
+        </article>
+
+        <!-- 7 · Online Quiz -->
+        <article class="project-card" data-category="backend">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?w=600&h=450&fit=crop" alt="Online Quiz application" loading="lazy">
+            <div class="project-actions">
+              <a href="https://github.com/purushothamvmitti05" target="_blank" rel="noopener" aria-label="View Quiz App on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+              <a href="https://v0-python-quiz-app-six.vercel.app/" target="_blank" rel="noopener" aria-label="View Quiz App live"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>Online Quiz Application</h4>
+            <p>Quiz platform with an admin panel for question management and per-user score tracking.</p>
+            <div class="tags"><span>Python</span><span>Flask</span></div>
+          </div>
+        </article>
+
+        <!-- 8 · MetaSpark -->
+        <article class="project-card" data-category="design">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=450&fit=crop" alt="MetaSpark healthcare UI" loading="lazy">
+            <div class="project-actions">
+              <a href="#" target="_blank" rel="noopener" aria-label="View MetaSpark case study"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>MetaSpark — Healthcare UI</h4>
+            <p>Appointment-booking interface designed in Figma, built around a user-research pass with real clinic staff.</p>
+            <div class="tags"><span>Figma</span><span>UX</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <h3>Experience</h3>
+        <span class="section-count">05</span>
+      </div>
+
+      <ul class="log">
+        <li class="log-entry">
+          <span class="log-date">2025.02 – 2025.05</span>
+          <div class="log-body">
+            <h4>Associate Software Intern <span class="log-co">— Utthunga Technologies</span></h4>
+            <p>Automated 80% of manual DB reporting with Python + MSSQL, cutting reporting time by 30%.</p>
+          </div>
+        </li>
+        <li class="log-entry">
+          <span class="log-date">2024.10 – 2025.02</span>
+          <div class="log-body">
+            <h4>DevOps Engineer Intern <span class="log-co">— Rooman Technologies</span></h4>
+            <p>Cut deployment time 50% with Docker + Jenkins CI/CD across 5+ microservices on AWS EC2.</p>
+          </div>
+        </li>
+        <li class="log-entry">
+          <span class="log-date">2024.04 – 2024.05</span>
+          <div class="log-body">
+            <h4>Full Stack Web Dev Intern <span class="log-co">— Varcons Technologies</span></h4>
+            <p>Shipped responsive UIs at 98% mobile compatibility on a PHP/MySQL backend.</p>
+          </div>
+        </li>
+        <li class="log-entry">
+          <span class="log-date">2024.08 – 2024.10</span>
+          <div class="log-body">
+            <h4>Python Programming Intern <span class="log-co">— YBI Foundation</span></h4>
+            <p>Built 15+ automation scripts with Pandas/NumPy/Matplotlib, improving data handling by 35%.</p>
+          </div>
+        </li>
+        <li class="log-entry">
+          <span class="log-date">2023.10 – 2023.12</span>
+          <div class="log-body">
+            <h4>IoT &amp; MicroPython Intern <span class="log-co">— Cranes Varsity</span></h4>
+            <p>Built a gas-leak detector on ESP32 and a classroom automation system over MQTT.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="section-head">
+        <h3>Contact</h3>
+      </div>
+      <p class="contact-line">Have a role, project, or just want to talk shop?</p>
+      <a class="contact-email" href="mailto:purushothamvmitti05@gmail.com">purushothamvmitti05@gmail.com</a>
+      <p class="contact-phone">+91 8073866293</p>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Purushotham V Mitti</span>
+    </footer>
+
+  </main>
+</div>
+
+<!-- CASE-STUDY MODAL -->
+<div id="case-modal" class="modal-backdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" aria-label="Close case study">✕</button>
+    <img id="modal-img" src="" alt="">
+    <h4 id="modal-title"></h4>
+    <div class="tags" id="modal-tags"></div>
+    <div class="case-block"><h5>// Problem</h5><p id="modal-problem"></p></div>
+    <div class="case-block"><h5>// Approach</h5><p id="modal-approach"></p></div>
+    <div class="case-block"><h5>// Result</h5><p id="modal-result"></p></div>
+    <div class="modal-links" id="modal-links"></div>
+  </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
